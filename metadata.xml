@@ -1,7 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-	<name>ErraticTBOI</name>
-	<directory>erratic-tboi-rep-mod</directory>
-	<description>Arbitrary chaos mod for TBOI.</description>
-	<version>1.1</version>
-	<visibility>Public</visibility>
+    <name>ErraticTBOI</name>
+    <directory>erratic-tboi-rep-mod</directory>
+    <id>3501528020</id>
+    <description>Arbitrary chaos mod for TBOI.</description>
+    <version>1.2</version>
+    <visibility>Public</visibility>
+    <tag id="Lua"/>
 </metadata>

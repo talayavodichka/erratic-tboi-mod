@@ -83,7 +83,7 @@ function mod:onNewRoom()
     end
 
     for i = 1, enemiesToReplace / 2 do
-        local enemy = Isaac.Spawn(math.random(10, 60), 0, 0, Isaac.GetRandomPosition(), Vector(0, 0), nil)
+        local enemy = Isaac.Spawn(math.random(10, 90), 0, 0, Isaac.GetRandomPosition(), Vector(0, 0), nil)
     end
 
     local effect = effects[math.random(#effects)]
@@ -102,16 +102,16 @@ function mod:onNewRoom()
         player:AddFear(EntityRef(player), 120)
     end
 
-    if math.random() < 0.3 then
+    if math.random() < 0.1 then
         player.TearFlags = math.random(1, 1000)
         player.TearColor = Color(math.random(), math.random(), math.random(), 1, 0, 0, 0)
     end
 
-    if math.random() < 0.4 then
+    if math.random() < 0.1 then
         player.MoveSpeed = math.random() * 2 + 0.3
     end
 
-    if math.random() < 0.2 then
+    if math.random() < 0.1 then
         Isaac.Explode(player.Position, player, 50)
     end
 end

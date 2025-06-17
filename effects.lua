@@ -1,5 +1,7 @@
 local game = Game()
 
+local collectibles = {}
+
 local effects = {
     function(player)
         player:AddCacheFlags(CacheFlag.CACHE_SIZE)
@@ -27,8 +29,16 @@ local effects = {
     end,
 
     function(player)
-        for i = 1, 3 do
-            player:AddCollectible(math.random(1, 700), 0, false)
+        local m_r = math.random(1, 700)
+        table.insert(collectibles, m_r)
+        player:AddCollectible(m_r, 0, false)
+    end,
+
+    function(player)
+        if #collectibles > 0 then
+            local i = math.random(1, #collectibles)
+            player:RemoveCollectible(collectibles[i])
+            table.remove(collectibles, math.random(1, #collectibles))
         end
     end,
 
