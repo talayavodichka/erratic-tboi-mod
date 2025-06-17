@@ -70,7 +70,6 @@ local effects = require('effects')
 function mod:onNewRoom()
     local player = Isaac.GetPlayer(0)
     if not player then return end
-
     local entities = Isaac.GetRoomEntities()
     local enemiesToReplace = 0
 
@@ -82,7 +81,7 @@ function mod:onNewRoom()
         end
     end
 
-    for i = 1, enemiesToReplace / 2 do
+    for i = 1, enemiesToReplace do
         local enemy = Isaac.Spawn(math.random(10, 90), 0, 0, Isaac.GetRandomPosition(), Vector(0, 0), nil)
     end
 

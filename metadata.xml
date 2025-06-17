@@ -4,7 +4,7 @@
     <directory>erratic-tboi-rep-mod</directory>
     <id>3501528020</id>
     <description>Arbitrary chaos mod for TBOI.</description>
-    <version>1.2</version>
+    <version>1.3</version>
     <visibility>Public</visibility>
     <tag id="Lua"/>
 </metadata>
